@@ -11,6 +11,7 @@
       content="Move what is stagnant, fix what is broken."
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+
     <link rel="icon" href="favicon.png" />
 
     <meta
@@ -29,10 +30,10 @@
       property="og:description"
       content="Move what is stagnant, fix what is broken."
     />
-    <meta
+    <!-- <meta
       property="og:image"
       content="https://krisztian.wtf/krisztian-hadi.jpg"
-    />
+    /> -->
 
     <meta
       name="twitter:card"
@@ -44,10 +45,10 @@
       name="twitter:description"
       content="Move what is stagnant, fix what is broken."
     />
-    <meta
+    <!-- <meta
       name="twitter:image"
       content="https://krisztian.wtf/krisztian-hadi.jpg"
-    />
+    /> -->
   </head>
 
   <body>
@@ -120,18 +121,31 @@
           <h3>¬ Contact us</h3>
           <p>
             Write an email to the
-            <a href="mailto:hey@lostsignals.studio">hey@lostsignals.studio</a>
-            email and let's have a chat.
+            <a
+              href="#"
+              role="button"
+              onclick="
+                copyToClipboard('&#104;&#x65;&#x79;&#x40;&#x6C;&#x6F;&#x73;&#x74;&#x73;&#x69;&#x67;&#x6E;&#x61;&#x6C;&#x73;&#x2E;&#x73;&#x74;&#x75;&#x64;&#x69;&#x6F;');
+                return false;
+              "
+              >&#104;&#x65;&#x79;&#x40;&#x6C;&#x6F;&#x73;&#x74;&#x73;&#x69;&#x67;&#x6E;&#x61;&#x6C;&#x73;&#x2E;&#x73;&#x74;&#x75;&#x64;&#x69;&#x6F;</a
+            >
+            email and let's have a conversation.
           </p>
         </section>
 
+        <!-- Footer -->
         <footer>
           <small>
-            This website was hand coded by a human being with &#10084; in
-            2026.
+            This website was hand coded by a human being with &#10084; in 2026.
           </small>
         </footer>
+
+        <!-- Toaster -->
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
       </main>
     </wrapper>
   </body>
+
+  <script src="script.js"></script>
 </html>
